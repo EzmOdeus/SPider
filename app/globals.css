@@ -4,13 +4,13 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb:  0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb:  0, 0, 0;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -29,5 +29,23 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+.alert{
+      animation-name: color;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+@keyframes color {
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: black;
+  }
+  100%{
+    background-color: red;
   }
 }
