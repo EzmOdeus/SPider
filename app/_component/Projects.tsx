@@ -11,7 +11,7 @@ function Projects() {
             <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
                 My Projects
             </h1>
-            <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+            <div className="h-full w-full grid grid-cols-3 md:flex-row gap-10 px-10">
                 <Link href="https://spider-healthy.vercel.app/">
                     <ProjectCard
                         src="/Opera Snapshot_2024-08-27_234049_spider-healthy.vercel.app.png"
@@ -22,7 +22,7 @@ function Projects() {
                 <Link href="https://courses-spider.vercel.app/">
                     <ProjectCard
                         src="/courses-spider.vercel.app.png"
-                        title="Courses webSite With Nextjs & Strapi"
+                        title="Spider-Courses"
                         description="Developed a fully functional website using Next.js ,Clerk For Auth, Strip , and Strapi .Implemented Courses listings, Booking, Payment, functionality, and user authentication."
                     />
                 </Link>
@@ -39,8 +39,7 @@ Implemented user authentication,upload post , likes , comments"
 
                         src="/Opera Snapshot_2024-08-27_234703_anime-es.vercel.app.png"
                         title="X-Clone"
-                        description="Developed a fully functional using Next.js ,Clerk-auth For Auth,flowbite-react and Firebase.
-Implemented user authentication,upload post , likes , comments"
+                        description="Developed a fully functional using Next.js ,Clerk-auth For Auth"
                     /></Link>
             </div>
         </div>)

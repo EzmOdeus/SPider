@@ -49,3 +49,19 @@ body {
     background-color: red;
   }
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: #105d9b;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:linear-gradient("#9061F9 ","#06b6d4 ");
+cursor: pointer
+}
+::-webkit-scrollbar {
+  width: 20px;
+cursor: pointer
+}

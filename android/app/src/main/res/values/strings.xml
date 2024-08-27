@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">portofolio</string>
-    <string name="title_activity_main">portofolio</string>
+    <string name="app_name">Spider</string>
+    <string name="title_activity_main">Spider</string>
     <string name="package_name">com.spider.seyam</string>
     <string name="custom_url_scheme">com.spider.seyam</string>
 </resources>

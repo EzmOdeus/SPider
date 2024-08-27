@@ -12,7 +12,7 @@ import Projects from '../_component/Projects'
 
 function page() {
     const video = useRef(null)
-    const [isend, setisend] = useState(true)
+    const [isend, setisend] = useState(false)
     const [section, setsection] = useState("0")
     console.log("🚀 ~ page ~ section:", section)
     const handleend = () => {
@@ -21,6 +21,11 @@ function page() {
 
     return (
         <div className='text-white'>
+            {
+                isend ? <audio loop autoPlay >
+                    <source src='/Free Horror Trailer Intro 30 second No Copyright For Video Cinematic Teaser.mp3' />
+                </audio>:<></>
+          }
          {  section=="0"?<></>: <div className='fixed z-50 top-[20%] right-3 h-[50%] flex flex-col justify-around  items-center p-3 rounded-3xl bg-green-700/20 shadow-2xl'>
 
 
