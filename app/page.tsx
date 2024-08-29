@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -30,7 +29,7 @@ export default function Home() {
 
       </div>
       {
-        timer ? <><div className="absolute h-full w-full top-0 justify-center items-center flex flex-col text-lg text-center  alert"><Image src="/seyam.png" className="z-50 mt-5" alt="logo" width={150} height={200} />upon entering,beware!<br></br> you won't be able to exit This is your final waring to save yourself,your family and all your loved ones<br></br> once you enter your life will change completely. <br /> Are You Ready.?</div></>
+        timer ? <><div className="absolute h-full w-full top-0 justify-center items-center flex flex-col text-lg text-center  alert"><Image src="/seyam.png" className="z-50 mt-5" alt="logo" width={150} height={200} />upon entering,beware!<br></br> you won&apos;t be able to exit This is your final waring to save yourself,your family and all your loved ones<br></br> once you enter your life will change completely. <br /> Are You Ready.?</div></>
           : <></>
       }
     </div>

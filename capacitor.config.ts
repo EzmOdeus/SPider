@@ -3,7 +3,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'com.spider.seyam',
   appName: 'Spider',
-  webDir: 'www',
+  webDir: 'out',
   server: {
     androidScheme: 'https'
   }
