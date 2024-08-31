@@ -38,7 +38,7 @@ Implemented user authentication,upload post , likes , comments"
                     <ProjectCard
 
                         src="/Opera Snapshot_2024-08-27_234703_anime-es.vercel.app.png"
-                        title="X-Clone"
+                        title="Anime"
                         description="Developed a fully functional using Next.js ,Clerk-auth For Auth"
                     /></Link>
             </div>
