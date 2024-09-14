@@ -56,10 +56,10 @@ function Page() {
             </div>}
             <div className={section != "0" ? "hidden" : ""}>{!isend ? <video className='h-[100vh] object-cover w-[100vw]' ref={video} onEnded={handleend} autoPlay>
                 <source src='/v1.mp4' />
-            </video> : <><div className="bg-black text-white h-[100vh] px-20 flex flex-col justify-center items-center text-center text-lg">Now that you know everything about me.let&apos;s continue our journey in my vast world. <br />I&apos;ll take you on a tour to learn a few more things about me.<br></br> But unfortunately.I&apos; ll have to kill you after the tour ends because you&apos;ve learned too much about me. Are you ready to continue the tour?
+            </video> : <><div className="bg-black text-white h-[100vh] px-20 flex flex-col justify-center items-center text-center text-lg">الآن بعد أن أصبحت تعرف كل شيء عني، دعنا نتابع رحلتنا في عالمي الواسع. <br /> سأصطحبك في جولة لتتعلم بعض الأشياء الأخرى عني. <br></br> لكن للأسف، سأضطر إلى قتلك بعد انتهاء الجولة لأنك عرفت الكثير عني. هل أنت مستعد لمتابعة الجولة؟
                 <div className="flex gap-40">
-                    <Link href={""} onClick={() => setsection("1")} className="bg-red-600  px-5 py-2 rounded-lg mt-20" >Yes</Link>
-                    <Link href={""} onClick={() => setsection("2")} className="bg-green-600 px-5 py-2 rounded-lg mt-20 ">No</Link>
+                    <Link href={""} onClick={() => setsection("1")} className="bg-red-600  px-5 py-2 rounded-lg mt-20" >نعم</Link>
+                    <Link href={""} onClick={() => setsection("2")} className="bg-green-600 px-5 py-2 rounded-lg mt-20 ">لا</Link>
 
                 </div></div>
             </>}</div>
