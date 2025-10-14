@@ -7,7 +7,13 @@
   --background-start-rgb:  0, 0, 0;
   --background-end-rgb: 0, 0, 0;
 }
-
+button{
+      cursor: url("/death.png"), auto;
+    }
+    a{
+            cursor: url("/death.png"), auto;
+    }
+    
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb:  0, 0, 0;
@@ -15,6 +21,31 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  transform:  translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  
+  filter: drop-shadow(0 0 10px rgb(215, 215, 215));
+  animation: pulse .5s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+/* لإخفاء المؤشر العادي */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -25,6 +56,7 @@ body {
     )
     rgb(var(--background-start-rgb));
     text-align: right;
+      cursor: url("/death.png"),auto;
 }
 
 @layer utilities {
@@ -56,13 +88,17 @@ body {
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 ::-webkit-scrollbar-thumb:hover {
   background:linear-gradient("#9061F9 ","#06b6d4 ");
-cursor: pointer
+/* cursor: pointer */
 }
 ::-webkit-scrollbar {
   width: 20px;
-cursor: pointer
+/* cursor: pointer */
+}
+
+button,a{
+  cursor: pointer
 }

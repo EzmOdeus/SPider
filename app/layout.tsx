@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "./_component/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +17,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}</body>
+        <audio autoPlay loop hidden>
+          <source
+            src="/صوت رعب بدون موسيقى - nana nana (youtube).mp3"
+            type="audio/mp3"
+          />
+        </audio>
+        {/* <CustomCursor/> */}
+        {children}
+      </body>
     </html>
   );
 }
