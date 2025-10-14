@@ -64,7 +64,7 @@ function Page() {
             />
             <div className=" text-white h-[100vh] px-20 flex flex-col justify-center items-center text-center text-xl">
               <p className="bg-[#63636350] p-1 rounded-xl ">
-                {" "}
+         
                 الآن بعد أن أصبحت تعرف كل شيء عني، دعنا نتابع رحلتنا في عالمي
                 الواسع. <br /> سأصطحبك في جولة لتتعلم بعض الأشياء الأخرى عني.{" "}
                 <br></br> لكن للأسف، سأضطر إلى قتلك بعد انتهاء الجولة لأنك عرفت
